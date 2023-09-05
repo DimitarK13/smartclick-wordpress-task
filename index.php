@@ -15,10 +15,10 @@
   </head>
   <body>
     <nav class="container | nav">
-      <img class="nav__logo" src="assets/images/logo.png" alt="Logo" />
+      <img class="nav__logo" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="Logo" />
 
       <button class="nav__toggle-button">
-        <img src="assets/images/nav-toggle.png" alt="Hamburger menu" />
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/nav-toggle.png" alt="Hamburger menu" />
       </button>
 
       <ul class="nav__primary-list" aria-expanded="false">
@@ -56,7 +56,7 @@
             </div>
           </div>
           <img
-            src="assets/images/image-hero.png"
+            src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/image-hero.png"
             alt="Girl in a green blouse and black jeans, holding a cup, sitting on a desk in an office."
           />
         </div>
@@ -68,7 +68,7 @@
             <div class="card">
               <img
                 class="card__image"
-                src="assets/images/icon-cubes.png"
+                src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon-cubes.png"
                 alt="Icon cubes"
               />
               <div class="card__content">
@@ -82,7 +82,7 @@
             <div class="card">
               <img
                 class="card__image"
-                src="assets/images/icon-star.png"
+                src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon-star.png"
                 alt="Icon star"
               />
               <div class="card__content">
@@ -96,7 +96,7 @@
             <div class="card">
               <img
                 class="card__image"
-                src="assets/images/icon-stack.png"
+                src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon-stack.png"
                 alt="Icon stack"
               />
               <div class="card__content">
@@ -112,7 +112,7 @@
             <div class="card">
               <img
                 class="card__image"
-                src="assets/images/icon-cubes.png"
+                src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon-cubes.png"
                 alt="Icon cubes"
               />
               <div class="card__content">
@@ -126,7 +126,7 @@
             <div class="card">
               <img
                 class="card__image"
-                src="assets/images/icon-star.png"
+                src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon-star.png"
                 alt="Icon star"
               />
               <div class="card__content">
@@ -140,7 +140,7 @@
             <div class="card">
               <img
                 class="card__image"
-                src="assets/images/icon-stack.png"
+                src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/icon-stack.png"
                 alt="Icon stack"
               />
               <div class="card__content">
@@ -176,7 +176,7 @@
           <div class="footer__content-description">
             <img
               class="footer__content-description-logo"
-              src="assets/images/logo-white.png"
+              src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-white.png"
               alt="Logo white"
             />
             <p class="footer__content-description-paragraph">
