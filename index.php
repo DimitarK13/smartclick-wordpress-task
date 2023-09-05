@@ -11,9 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;700;900&family=Work+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/styles/styles.css" />
 
-    <script defer src="assets/scripts/index.js"></script>
+    <?php wp_head() ?>
   </head>
   <body>
     <nav class="container | nav">
