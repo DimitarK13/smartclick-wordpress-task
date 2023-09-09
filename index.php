@@ -21,18 +21,15 @@
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/nav-toggle.png" alt="Hamburger menu" />
       </button>
 
-      <ul class="nav__primary-list" aria-expanded="false">
-        <li class="primary-list__item"><a href="#">Home</a></li>
-        <li class="primary-list__item"><a href="#">Features</a></li>
-        <li class="primary-list__item"><a href="#">Pricing</a></li>
-        <li class="primary-list__item"><a href="#">About Us</a></li>
-        <li class="primary-list__item"><a href="#">Help</a></li>
-        <li class="primary-list__item hide-l">
-          <a class="btn" href="#">Book a Meeting</a>
-        </li>
-      </ul>
-
-      <a class="btn | nav__cta hide-s" href="#">Book a Meeting</a>
+      <?php 
+        wp_nav_menu(
+            array(
+                'theme_location' => 'primary-nav',
+                'container' => 'ul',
+                'menu_class' => 'nav__primary-list'
+            )
+        )
+      ?>
     </nav>
 
     <main>
