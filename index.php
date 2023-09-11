@@ -186,22 +186,22 @@
           </div>
           <div class="footer__content-links">
             <div class="footer__content-links-column">
-              <ul>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Services</a></li>
-                <li><a href="#">GDPR</a></li>
-                <li><a href="#">FAQs</a></li>
-              </ul>
+            <?php 
+              wp_nav_menu(
+                  array(
+                      'theme_location' => 'footer-nav-one',
+                  )
+              )
+            ?>
             </div>
             <div class="footer__content-links-column">
-              <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Capabilities</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Partnership Integration</a></li>
-              </ul>
+            <?php 
+              wp_nav_menu(
+                  array(
+                      'theme_location' => 'footer-nav-two',
+                  )
+              )
+            ?>
             </div>
           </div>
         </div>
