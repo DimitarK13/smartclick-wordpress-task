@@ -17,3 +17,5 @@ register_nav_menus(
         'footer-nav-two' => 'Footer Nav Two'
     )
 );
+
+add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
