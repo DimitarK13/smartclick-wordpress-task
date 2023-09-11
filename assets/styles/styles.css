@@ -116,7 +116,7 @@ footer {
   padding: 15px 25px;
   width: max-content;
   background-color: var(--clr-primary-400);
-  color: var(--clr-neutral-100) !important;
+  color: var(--clr-neutral-100);
 }
 
 .btn:hover,
@@ -146,6 +146,10 @@ footer {
   flex: 1;
   align-items: center;
   gap: 1.875rem;
+}
+
+.nav__primary-list .btn a {
+  color: var(--clr-neutral-100);
 }
 
 .nav__primary-list li a {
