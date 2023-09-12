@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;700;900&family=Work+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-
-    <?php wp_head() ?>
-  </head>
-  <body>
-    <nav class="container | nav">
-      <img class="nav__logo" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="Logo" />
-
-      <button class="nav__toggle-button">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/nav-toggle.png" alt="Hamburger menu" />
-      </button>
-
-      <?php 
-        wp_nav_menu(
-            array(
-                'theme_location' => 'primary-nav',
-                'container' => 'ul',
-                'menu_class' => 'nav__primary-list'
-            )
-        )
-      ?>
-    </nav>
+<?php get_header() ?>
 
     <main>
       <section class="container" aria-label="Hero">
@@ -167,49 +135,4 @@
       </section>
     </main>
 
-    <footer class="background-secondary">
-      <div class="container">
-        <div class="footer__content">
-          <div class="footer__content-description">
-            <img
-              class="footer__content-description-logo"
-              src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-white.png"
-              alt="Logo white"
-            />
-            <p class="footer__content-description-paragraph">
-              Tweakful is HubSpot Theme Based On Engagement Design Framework,
-              designed & developed by Openthrive.
-            </p>
-            <a class="footer__content-description-button" href="#"
-              >Learn More</a
-            >
-          </div>
-          <div class="footer__content-links">
-            <div class="footer__content-links-column">
-            <?php 
-              wp_nav_menu(
-                  array(
-                      'theme_location' => 'footer-nav-one',
-                  )
-              )
-            ?>
-            </div>
-            <div class="footer__content-links-column">
-            <?php 
-              wp_nav_menu(
-                  array(
-                      'theme_location' => 'footer-nav-two',
-                  )
-              )
-            ?>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer__copyright">
-          <p>&copy; 2015-2020 Openthrive. All right reserved.</p>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+    <?php get_footer() ?>
