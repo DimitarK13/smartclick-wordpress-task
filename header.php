@@ -15,7 +15,11 @@
   </head>
   <body>
     <nav class="container | nav">
-      <img class="nav__logo" src="<?php echo get_site_icon_url() ?>/assets/images/logo.png" alt="Logo" />
+        <?php 
+            if ( function_exists( 'the_custom_logo' ) ) {
+                the_custom_logo();
+            }
+        ?>
 
       <button class="nav__toggle-button">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/nav-toggle.png" alt="Hamburger menu" />
