@@ -31,7 +31,7 @@
         </div>
       </section> -->
 
-      <section class="container" aria-label="Benefits">
+      <!-- <section class="container" aria-label="Benefits">
         <div class="cards">
           <div class="cards__column">
             <div class="card">
@@ -87,8 +87,7 @@
               <div class="card__content">
                 <h2 class="card__content-heading">First Benefit</h2>
                 <p class="card__content-paragraph">
-                  Gorgeous, high-quality design system for mobile, tablet &
-                  desktop devices a few
+                  Gorgeous, high-quality design system for mobile, tablet & desktop devices a few
                 </p>
               </div>
             </div>
@@ -122,9 +121,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="background-primary" aria-label="Closing Headline">
+      <!-- <section class="background-primary" aria-label="Closing Headline">
         <div class="container padding-block closing-cta">
           <h2 class="closing-cta__header">
             The Is Closing Headline To Make A Impact For Call To Action
@@ -136,7 +135,7 @@
           </p>
           <a class="btn closing-cta__button" href="#">Book a Meeting</a>
         </div>
-      </section>
+      </section> -->
     </main>
 
 <?php get_footer() ?>

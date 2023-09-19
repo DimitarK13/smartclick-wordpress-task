@@ -23,5 +23,15 @@ function my_acf_blocks() {
             'icon' => 'admin-comments',
             'keywords' => array('closing', 'cta')
         ));
+
+        acf_register_block_type(array(
+            'name' => 'card',
+            'title' => __('Block: Card'),
+            'description' => __('Card'),
+            'render_template' => '/blocks/card/card.php',
+            'category' => 'custom',
+            'icon' => 'admin-comments',
+            'keywords' => array('card')
+        ));
     }
 }
