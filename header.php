@@ -14,7 +14,7 @@
     <?php wp_head() ?>
   </head>
   <body>
-    <nav class="container | nav">
+    <nav class="container nav">
         <?php 
             if ( function_exists( 'the_custom_logo' ) ) {
                 the_custom_logo();

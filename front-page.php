@@ -121,7 +121,7 @@
       </section>
 
       <section class="background-primary" aria-label="Closing Headline">
-        <div class="container padding-block | closing-cta">
+        <div class="container padding-block closing-cta">
           <h2 class="closing-cta__header">
             The Is Closing Headline To Make A Impact For Call To Action
           </h2>
