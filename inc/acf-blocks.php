@@ -13,5 +13,15 @@ function my_acf_blocks() {
             'icon' => 'admin-comments',
             'keywords' => array('hero')
         ));
+
+        acf_register_block_type(array(
+            'name' => 'closing-cta',
+            'title' => __('Block: Closing CTA'),
+            'description' => __('Closing CTA Section'),
+            'render_template' => '/blocks/closing-cta/closing-cta.php',
+            'category' => 'custom',
+            'icon' => 'admin-comments',
+            'keywords' => array('closing', 'cta')
+        ));
     }
 }
