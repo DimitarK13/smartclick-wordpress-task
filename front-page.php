@@ -43,8 +43,7 @@
               <div class="card__content">
                 <h2 class="card__content-heading">First Benefit</h2>
                 <p class="card__content-paragraph">
-                  Gorgeous, high-quality design system for mobile, tablet &
-                  desktop devices a few
+                  Gorgeous, high-quality design system for mobile, tablet & desktop devices a few
                 </p>
               </div>
             </div>

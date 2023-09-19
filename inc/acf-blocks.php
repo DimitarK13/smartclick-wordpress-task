@@ -25,13 +25,13 @@ function my_acf_blocks() {
         ));
 
         acf_register_block_type(array(
-            'name' => 'card',
-            'title' => __('Block: Card'),
-            'description' => __('Card'),
-            'render_template' => '/blocks/card/card.php',
+            'name' => 'cards',
+            'title' => __('Block: Cards'),
+            'description' => __('Cards'),
+            'render_template' => '/blocks/cards/cards.php',
             'category' => 'custom',
             'icon' => 'admin-comments',
-            'keywords' => array('card')
+            'keywords' => array('cards')
         ));
     }
 }
