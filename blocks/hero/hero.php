@@ -20,9 +20,11 @@
                 <p>Here you can put secondary action statement & CTA</p>
             </div>
         </div>
-        <img
-            src="<?php echo $picture['url'] ?>"
-            alt="Girl in a green blouse and black jeans, holding a cup, sitting on a desk in an office."
-        />
+        <?php if(!empty($picture)) : ?>
+            <img
+                src="<?php echo $picture['url'] ?>"
+                alt="<?php echo $picture['alt'] ?>"
+            />
+        <?php endif; ?>
     </div>
 </section>
