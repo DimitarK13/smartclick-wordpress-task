@@ -1,7 +1,11 @@
 <?php get_header() ?>
 
     <main>
-      <section class="container" aria-label="Hero">
+      <?php 
+        $content = apply_filters( 'the_content', get_the_content() );
+        echo $content;
+      ?>
+      <!-- <section class="container" aria-label="Hero">
         <div class="hero">
           <div class="hero__content">
             <header>
@@ -25,7 +29,7 @@
             alt="Girl in a green blouse and black jeans, holding a cup, sitting on a desk in an office."
           />
         </div>
-      </section>
+      </section> -->
 
       <section class="container" aria-label="Benefits">
         <div class="cards">
