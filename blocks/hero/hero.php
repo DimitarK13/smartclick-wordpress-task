@@ -1,6 +1,6 @@
 <?php
     $fields = get_fields();
-	extract($fields);
+    if(!empty($fields)) : extract($fields); else : return; endif;
 ?>
 
 <section class="container" aria-label="Hero">
@@ -27,6 +27,7 @@
                             <?php echo $content['button_primary']['title'] ?>
                         </a>
                     <?php endif; ?>
+
                     <?php if(!empty($content['button_secondary'])) : ?>
                         <p>
                             <?php echo $content['button_secondary']['title'] ?>

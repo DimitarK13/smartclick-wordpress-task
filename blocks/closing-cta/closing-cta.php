@@ -1,6 +1,6 @@
 <?php
     $fields = get_fields();
-	extract($fields);
+    if(!empty($fields)) : extract($fields); else : return; endif;
 ?>
 
 <section class="background-primary" aria-label="Closing Headline">
