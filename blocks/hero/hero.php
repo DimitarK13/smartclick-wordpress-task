@@ -20,10 +20,20 @@
                 </p>
             <?php endif; ?>
 
-            <div class="hero__content-buttons">
-                <a class="btn" href="#">Book a Meeting</a>
-                <p>Here you can put secondary action statement & CTA</p>
-            </div>
+            <?php if(!empty($content['button_primary']) || !empty($content['button_secondary'])) : ?>
+                <div class="hero__content-buttons">
+                    <?php if(!empty($content['button_primary'])) : ?>
+                        <a class="btn" href="<?php echo $content['button_primary']['url'] ?>">
+                            <?php echo $content['button_primary']['title'] ?>
+                        </a>
+                    <?php endif; ?>
+                    <?php if(!empty($content['button_secondary'])) : ?>
+                        <p>
+                            <?php echo $content['button_secondary']['title'] ?>
+                        </p>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
         </div>
         
         <?php if(!empty($picture)) : ?>

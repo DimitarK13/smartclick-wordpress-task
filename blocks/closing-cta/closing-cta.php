@@ -17,6 +17,10 @@
             </p>
         <?php endif; ?>
 
-        <a class="btn closing-cta__button" href="#">Book a Meeting</a>
+        <?php if(!empty($content['button'])) : ?>
+            <a class="btn closing-cta__button" href="<?php echo $content['button']['url'] ?>">
+                <?php echo $content['button']['title'] ?>
+            </a>
+        <?php endif; ?>
     </div>
 </section>
